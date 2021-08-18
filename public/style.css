@@ -1,46 +1,19 @@
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+  word-wrap: break-word;
+  font-family: '微软雅黑', sans-serif
 }
 body{
-    background-color: #F0F0F0
+		width: 100%;
+		height: 100%;
+		position: relative;
+    background-color: #F0F0F0;
+		overflow-x: hidden;
+		min-height: 200vh;
 }
 #app{
 	width:100%;height:100%;
-	position: relative;
-}
-.nav{
-    width: 100%;
-    height: 60px;
-    overflow: hidden;
-    position: relative;
-    background-color: 	#a0d6a0;
-}
-.nav_li ul{
-	width: 800px;
-	list-style: none;
-	margin: 0 auto;
-	position: relative;
-	height: 25px;
-	margin-top:25px;
-	z-index: 3;
-}
-.nav_li ul li{
-	width:25%;
-	height: 100%;
-	float: left;
-	position: relative;
-	overflow: hidden;
-}
-.nav_li ul li a{
-	text-decoration: none;
-	text-align: center;
-	display: block;
-	height: 100%;
-	color:rgba(12, 31, 252, 1);
-}
-.a{
-	width: 5px;
-	height: 5px;
 	position: absolute;
 }
