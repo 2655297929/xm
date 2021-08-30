@@ -1,24 +1,115 @@
 <template>
+  <!-- 总 -->
   <div class="back">
-    <div class="img1_back" id="back0"></div>
-    <div class="img2_back" id="back0"></div>
+    <img src="../../src/assets/back.png" class="backImg" />
+    <!-- 内总 -->
+    <div class="img_back" id="back0">
+      <div class="demo__tro">
+        <!-- 轮播 -->
+        <Carousel autoplay v-model="value2" class="demo">
+          <Carousel-item>
+            <div class="demo-carousel" id="carouse"></div>
+          </Carousel-item>
+          <Carousel-item>
+            <div class="demo-carouse2" id="carouse"></div>
+          </Carousel-item>
+          <Carousel-item>
+            <div class="demo-carouse3" id="carouse"></div>
+          </Carousel-item>
+          <Carousel-item>
+            <div class="demo-carouse4" id="carouse"></div>
+          </Carousel-item>
+        </Carousel>
+        <!-- 内容 -->
+        <Coment />
+        <!-- 底部 -->
+        <div class="bottom">
+          <div id="htmer_time"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <style scoped>
 .back {
   position: relative;
-}
-#back0 {
   width: 100%;
-  height: 100vh;
-  position: relative;
+  min-height: 1894px;
+}
+.backImg {
+  width: 120vw;
+  height: 100%;
+  position: absolute;
+  left: -180px;
   opacity: 0.8;
-  background-size: 100% 100% no-repeat;
 }
-.img1_back {
-  background: url(".././assets/1.jpeg") no-repeat;
+.img_back {
+  width: 59%;
+  height: 1894px;
+  background-color: salmon;
+  position: relative;
+  margin: 0 auto;
 }
-.img2_back {
-  background: url(".././assets/2.jpeg") no-repeat;
+.coment {
+  width: 100%;
+  height: 306%;
+  background-color: rgb(163, 100, 45);
+}
+.demo__tro {
+  width: 100%;
+  height: 460px;
+  background-color: sandybrown;
+  position: relative;
+}
+.demo {
+  width: 100%;
+  height: 100%;
+}
+.bottom {
+  position: absolute;
+  bottom: -1434px;
+  width: 100%;
+  height: 6%;
+  background-color: aquamarine;
+}
+#htmer_time {
+  color: #fff;
+  position: absolute;
+  font-family: "雅黑";
+  bottom: 10px;
+}
+#carouse {
+  width: 100%;
+  height: 460px;
+}
+.demo-carousel {
+  background: url("https://i.loli.net/2021/08/19/mgrCISW3h1xLj6M.jpg") no-repeat;
+  background-position: -260px -200px;
+}
+.demo-carouse2 {
+  background: url("https://i.loli.net/2021/08/30/xaDrHUZXF9gPolq.png") no-repeat;
+  background-position: -300px -106px;
+}
+.demo-carouse3 {
+  background: url("https://i.loli.net/2021/08/30/VTZyxm2AnPCuYFp.png") no-repeat;
+  background-position: -222px -100px;
+}
+.demo-carouse4 {
+  background: url("https://i.loli.net/2021/08/19/nGp237mXOogDFHr.jpg") no-repeat;
+  background-position: -570px -76px;
 }
 </style>
+<script>
+import Coment from "./coment/coment.vue";
+export default {
+  name: "back",
+  data() {
+    return {
+      value2: 0,
+    };
+  },
+  components: {
+    Coment,
+  },
+};
+</script>

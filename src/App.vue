@@ -1,34 +1,12 @@
 <template>
   <div id="app">
-    <div>
-      <Waves></Waves>
-    </div>
-    <div>
-      <Nav></Nav>
-    </div>
-    <div>
-      <Back></Back>
-    </div>
+    <!-- 导航 -->
+    <Nav></Nav>
+    <!-- 背景 -->
+    <Back></Back>
   </div>
 </template>
 
-<script>
-import Waves from "./components/waves.vue";
-import Nav from "./components/nav.vue";
-import Back from "./components/back.vue";
-export default {
-  name: "app",
-  data() {
-    return {};
-  },
-  methods: {},
-  components: {
-    Waves,
-    Nav,
-    Back,
-  },
-};
-</script>
 <style lang="scss" scoped>
 * {
   margin: 0;
@@ -43,3 +21,19 @@ html {
   font-size: 14px;
 }
 </style>
+<script>
+import Nav from "./components/nav.vue";
+import Back from "./components/back.vue";
+
+export default {
+  name: "app",
+  data() {
+    return {};
+  },
+  methods: {},
+  components: {
+    Nav,
+    Back,
+  },
+};
+</script>

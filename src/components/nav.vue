@@ -4,17 +4,16 @@
       <router-link class="logo" to="../views/Home.vue">Logo</router-link>
       <ul>
         <li><router-link to="../views/Home.vue">首页</router-link></li>
-        <li><router-link to="../views/Home.vue">关于</router-link></li>
-        <li><router-link to="../views/Home.vue">服务</router-link></li>
-        <li><router-link to="../views/Home.vue">作品</router-link></li>
-        <li><router-link to="../views/Home.vue">联系</router-link></li>
+        <li><router-link to="../views/Home.vue">ES6</router-link></li>
+        <li><router-link to="../views/Home.vue">Vue</router-link></li>
+        <li><router-link to="../views/Home.vue">React</router-link></li>
+        <li><router-link to="../views/Home.vue">Angular</router-link></li>
       </ul>
     </header>
   </div>
 </template>
 <style lang="scss" scoped>
-.nav {
-}
+
 header {
   position: relative;
   top: 0;
@@ -23,15 +22,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: 0.6s;
-  padding: 32px 100px;
-  z-index: 2;
+  transition: 0.66s;
+  padding: 0 100px;
   background-color: #d99746;
 }
 
 header.sticky {
   padding: 5px 100px;
-  background: rgba(187,128,61,0.8);
+  background: rgba(187, 128, 61, 0.9);
 }
 
 header .logo {
@@ -39,10 +37,11 @@ header .logo {
   font-weight: 700;
   color: #fff;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 3.4em;
   text-transform: uppercase;
   letter-spacing: 2px;
-  transition: 0;
+  text-shadow: rgb(255, 255, 255) 1px 0 0, rgb(255, 255, 255) 0 2px 0,
+    rgb(255, 255, 255) -1px 0 0, rgb(255, 255, 255) 0 0px 0;
 }
 
 header ul {
@@ -59,12 +58,13 @@ header ul li {
 
 header ul li a {
   position: relative;
-  margin: 0 15px;
+  margin: 0 20px;
   text-decoration: none;
   color: #fff;
   letter-spacing: 2px;
   font-weight: 500px;
   transition: 0.5s;
+  font-size: 2.2vh;
 }
 header.sticky .logo,
 header.sticky ul li a {
