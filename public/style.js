@@ -94,10 +94,10 @@ window.onload = function() {
     }
 
     function setTime() {
-        var create_time = Math.round(new Date(Date.UTC(2019, 01, 23, 11, 42, 23)).getTime() / 1000);
+        var create_time = Math.round(new Date(Date.UTC(2021, 8, 00, 00, 00, 00)).getTime() / 1000);
         var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
         currentTime = secondToDate((timestamp - create_time));
-        currentTimeHtml = 'Wyc‘s博客已经运行了：' + currentTime[0] + '年 ' + currentTime[1] + '天 ' +
+        currentTimeHtml = 'Mr.zhang 的博客已经运行了：' + currentTime[0] + '年 ' + currentTime[1] + '天 ' +
             currentTime[2] + '时 ' + currentTime[3] + '分 ' + currentTime[4] +
             '秒';
         document.getElementById("htmer_time").innerHTML = currentTimeHtml;
