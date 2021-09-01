@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <!-- 导航 -->
-    <Nav/>
-    <!-- 背景内容 -->
-    <Home/>
+    <!-- 首页 -->
+    <Home></Home>
   </div>
 </template>
 
@@ -22,7 +20,6 @@ html {
 }
 </style>
 <script>
-import Nav from "./components/nav.vue";
 import Home from "./views/Home.vue";
 
 export default {
@@ -32,7 +29,6 @@ export default {
   },
   methods: {},
   components: {
-    Nav,
     Home
   },
 };
